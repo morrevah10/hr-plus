@@ -1,0 +1,81 @@
+.list {
+  grid-auto-rows: 250px;
+
+  .actions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: antiquewhite;
+
+
+    h2{
+      padding: 30px;
+    }
+  }
+
+  .btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+}
+
+.episode-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #5b52db2e;
+  text-align: center;
+  box-shadow: 3px 4px 15px #00000026;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  color: antiquewhite;
+}
+
+.episode-page {
+  color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h4 {
+    padding: 10px;
+  }
+
+  h2 {
+    padding-bottom: 20px;
+  }
+}
+
+.back-to {
+  color: rgb(255, 255, 255);
+  padding-bottom: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+}
+
+.back-to:hover {
+  span {
+    padding-right: 25px;
+  }
+
+  span:after {
+    opacity: 1;
+    right: 0;
+  }
+}
